@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.db.mapper.LitemallAftersaleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mall.db.domain.LitemallAftersale">
+        <id column="id" property="id" />
+        <result column="aftersale_sn" property="aftersaleSn" />
+        <result column="order_id" property="orderId" />
+        <result column="user_id" property="userId" />
+        <result column="type" property="type" />
+        <result column="reason" property="reason" />
+        <result column="amount" property="amount" />
+        <result column="pictures" property="pictures" />
+        <result column="comment" property="comment" />
+        <result column="status" property="status" />
+        <result column="handle_time" property="handleTime" />
+        <result column="add_time" property="addTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, aftersale_sn, order_id, user_id, type, reason, amount, pictures, comment, status, handle_time, add_time, update_time, deleted
+    </sql>
+
+</mapper>

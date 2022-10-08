@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.db.mapper.LitemallAdMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mall.db.domain.LitemallAd">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="link" property="link" />
+        <result column="url" property="url" />
+        <result column="position" property="position" />
+        <result column="content" property="content" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="enabled" property="enabled" />
+        <result column="add_time" property="addTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, link, url, position, content, start_time, end_time, enabled, add_time, update_time, deleted
+    </sql>
+
+</mapper>

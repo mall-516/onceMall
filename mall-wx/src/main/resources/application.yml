@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: datab,core,wx
+  messages:
+    encoding: UTF-8
