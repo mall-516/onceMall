@@ -12,5 +12,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2022-09-29
  */
 public interface LitemallUserService extends IService<LitemallUser> {
+    public LitemallUser getUsername(LitemallUser user);
 
+
+    boolean updateLogin(LitemallUser user);
 }

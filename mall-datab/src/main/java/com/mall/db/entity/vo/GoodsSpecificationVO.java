@@ -1,4 +1,4 @@
-package com.mall.db.VO;
+package com.mall.db.entity.vo;
 
 import com.mall.db.domain.LitemallGoodsSpecification;
 import lombok.Data;

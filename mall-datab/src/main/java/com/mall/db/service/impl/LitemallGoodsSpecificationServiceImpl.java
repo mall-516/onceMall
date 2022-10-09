@@ -1,7 +1,7 @@
 package com.mall.db.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.mall.db.VO.GoodsSpecificationVO;
+import com.mall.db.entity.vo.GoodsSpecificationVO;
 import com.mall.db.domain.LitemallGoodsSpecification;
 import com.mall.db.mapper.LitemallGoodsSpecificationMapper;
 import com.mall.db.service.LitemallGoodsSpecificationService;
