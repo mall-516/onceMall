@@ -62,6 +62,7 @@ public class WxRegisterController {
         String code = JacksonUtil.parseString(body, "code");
         String wxCode = JacksonUtil.parseString(body, "wxCode");
         String email = JacksonUtil.parseString(body, "email");
+
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password) || StringUtils.isEmpty(email)) {
             return ResponseUtil.badArgument();
         }

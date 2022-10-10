@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd076677-feed-44a9-9080-469d7090df1c" name="Changes" comment="注册">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error-2022-10-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/log-2022-10-08.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-core/src/main/java/com/mall/core/util/IpUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-core/src/main/java/com/mall/core/util/JacksonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/entity/vo/ToEmailVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/entity/vo/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/WxRegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/VO/GoodsSpecificationVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/entity/vo/GoodsSpecificationVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/domain/LitemallUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/domain/LitemallUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/src/main/resources/application-datab.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/src/main/resources/application-datab.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/target/classes/application-datab.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/target/classes/application-datab.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/domain/LitemallUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/domain/LitemallUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/util/WxResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/util/WxResponseCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/src/main/resources/application-wx.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/src/main/resources/application-wx.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/target/classes/application-wx.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/target/classes/application-wx.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/util/WxResponseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/util/WxResponseCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/WxRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/WxRegisterController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +131,7 @@
       <workItem from="1665277960900" duration="688000" />
       <workItem from="1665300888072" duration="10967000" />
       <workItem from="1665364303593" duration="3820000" />
+      <workItem from="1665372435998" duration="1179000" />
     </task>
     <servers />
   </component>
