@@ -91,11 +91,27 @@ public class LitemallUserController {
     /**
      * 微信登陆
      * @param wxUserInfo
+     * 1.获取code，判断是否为空，从wxService.getUserService().getSessionInfo(code);方法获取openid和sessionkey
+     * 2. 保存新用户，给新用户发优惠券
+     * 3. 生成token 返回token和userInfo
+     *
      */
+
     @GetMapping("/login_by_weixin")
-    public void WX_login(@RequestBody WxUserInfo wxUserInfo){
+    public Object WX_login(@RequestBody WxUserInfo wxUserInfo){
+
+        String code = wxUserInfo.getCode();
+        UserInfo userInfo = wxUserInfo.getUserInfo();
+        if (Objects.isNull(code)||Objects.isNull(userInfo)){
+            return ResponseUtil.badArgument();
+        }
+
+        return null;
+
 
     }
+
+
 
 
 
