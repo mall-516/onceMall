@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]" date="1665325625694" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2022/10/9 22:27 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="mall-datab/target/classes/com/mall/db/domain/LitemallUser.class" />
+    <option name="AFTER_PATH" value="mall-datab/target/classes/com/mall/db/domain/LitemallUser.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]/LitemallUser.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="mall-wx/target/classes/com/mall/wx/controller/WxRegisterController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]/WxRegisterController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="mall-datab/target/classes/com/mall/db/VO/GoodsSpecificationVO.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="mall-wx/target/classes/com/mall/wx/util/WxResponseCode.class" />
+    <option name="AFTER_PATH" value="mall-wx/target/classes/com/mall/wx/util/WxResponseCode.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]/WxResponseCode.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="mall-datab/target/classes/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.class" />
+    <option name="AFTER_PATH" value="mall-datab/target/classes/com/mall/db/service/impl/LitemallGoodsSpecificationServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_10_9_22_27_[Changes]/LitemallGoodsSpecificationServiceImpl.class" />
+  </binary>
+</changelist>
