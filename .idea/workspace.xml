@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd076677-feed-44a9-9080-469d7090df1c" name="Changes" comment="注册">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/WxRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/WxRegisterController.java" afterDir="false" />
+    <list default="true" id="cd076677-feed-44a9-9080-469d7090df1c" name="Changes" comment="合并登录和注册">
+      <change beforePath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/entity/vo/WxUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/src/main/java/com/mall/db/entity/vo/WxUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/service/impl/LitemallUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-datab/target/classes/com/mall/db/service/impl/LitemallUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/LitemallUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/src/main/java/com/mall/wx/controller/LitemallUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/controller/LitemallUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/controller/LitemallUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/controller/WxRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-wx/target/classes/com/mall/wx/controller/WxRegisterController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -132,6 +136,7 @@
       <workItem from="1665300888072" duration="10967000" />
       <workItem from="1665364303593" duration="3820000" />
       <workItem from="1665372435998" duration="1179000" />
+      <workItem from="1665402643056" duration="1070000" />
     </task>
     <servers />
   </component>
@@ -191,7 +196,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册" />
+    <MESSAGE value="合并登录和注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并登录和注册" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

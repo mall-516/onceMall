@@ -4,13 +4,12 @@ package com.mall.wx.controller;
 import cn.dev33.satoken.stp.StpUtil;
 import com.mall.core.util.ResponseUtil;
 import com.mall.db.domain.LitemallUser;
+import com.mall.db.entity.vo.WxUserInfo;
 import com.mall.db.service.impl.LitemallUserServiceImpl;
 import com.mall.db.entity.vo.UserInfo;
-import com.mall.db.entity.vo.WxUserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -42,7 +41,7 @@ public class LitemallUserController {
      * @return
      */
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public Object WX_AccountLogin(@RequestBody LitemallUser body){
 //        1.获取账号和密码
         String password = body.getPassword();
