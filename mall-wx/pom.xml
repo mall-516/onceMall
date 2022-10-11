@@ -39,11 +39,18 @@
             <version>4.3.0</version>
         </dependency>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64cecd34fe6964a0d533c5a45f32f74d8552599b
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64cecd34fe6964a0d533c5a45f32f74d8552599b
 
 
     </dependencies>
