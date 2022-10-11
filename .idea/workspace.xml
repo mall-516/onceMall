@@ -48,8 +48,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="F:\apache-mavern-Repository" />
-        <option name="mavenHome" value="F:/apache-maven-3.8.1" />
-        <option name="useMavenConfig" value="true" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.8.1" />
         <option name="userSettingsFile" value="F:\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -193,6 +192,7 @@
         <entry key="570d75e1-e757-450a-96ac-3bc3456ec021" value="TOOL_WINDOW" />
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="注册" />

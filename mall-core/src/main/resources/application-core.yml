@@ -1,0 +1,5 @@
+wx:
+  miniapp:
+    app-id: wx3c5cb94ae6454f19
+    app-secret: 178bf738777d8df6bd573fec4ca2aa21
+    msgDataFormat: JSON
