@@ -35,4 +35,15 @@ public class LitemallUserServiceImpl extends ServiceImpl<LitemallUserMapper, Lit
             return false;
         return true;
     }
+
+    @Override
+    public LitemallUser selectOpenid(String openid) {
+
+        LambdaQueryWrapper<LitemallUser> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(LitemallUser::getWeixinOpenid,openid);
+        LitemallUser one = getOne(queryWrapper, true);
+        return one;
+    }
+
+
 }

@@ -14,6 +14,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface LitemallUserService extends IService<LitemallUser> {
     public LitemallUser getUsername(LitemallUser user);
 
-
     boolean updateLogin(LitemallUser user);
+
+    LitemallUser selectOpenid(String openid);
+
+
 }

@@ -83,7 +83,7 @@ public class LitemallUser implements Serializable {
 
       @ApiModelProperty("逻辑删除")
       @TableLogic
-    private Boolean deleted;
+      private Boolean deleted;
 
       @ApiModelProperty("0 可用, 1 禁用, 2 注销")
       private String email;

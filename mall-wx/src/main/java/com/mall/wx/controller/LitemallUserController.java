@@ -1,15 +1,21 @@
 package com.mall.wx.controller;
 
 
+import cn.binarywang.wx.miniapp.api.WxMaService;
+import cn.binarywang.wx.miniapp.bean.WxMaJscode2SessionResult;
 import cn.dev33.satoken.stp.StpUtil;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.mall.core.util.ResponseUtil;
 import com.mall.db.domain.LitemallUser;
 import com.mall.db.entity.vo.WxUserInfo;
 import com.mall.db.service.impl.LitemallUserServiceImpl;
 import com.mall.db.entity.vo.UserInfo;
+import me.chanjar.weixin.common.error.WxErrorException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -26,12 +32,14 @@ import static com.mall.wx.util.WxResponseCode.AUTH_INVALID_ACCOUNT;
  * @since 2022-09-29
  */
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/wx/auth")
 public class LitemallUserController {
 
     @Autowired
     private LitemallUserServiceImpl litemallUserService;
 
+    @Autowired
+    private WxMaService wxService;
     /**
      *
      * @param body  {
@@ -91,8 +99,70 @@ public class LitemallUserController {
      * 微信登陆
      * @param wxUserInfo
      */
-    @GetMapping("/login_by_weixin")
-    public void WX_login(@RequestBody WxUserInfo wxUserInfo){
+    @PostMapping("/login_by_weixin")
+    public Object WX_login(@RequestBody WxUserInfo wxUserInfo){
+        String code = wxUserInfo.getCode();
+        UserInfo userInfo = wxUserInfo.getUserInfo();
+
+        if (Objects.isNull(code)||Objects.isNull(userInfo)){
+            return ResponseUtil.badArgument();
+        }
+
+
+        WxMaJscode2SessionResult info = null;
+        String openid=null;
+        String sessionKey=null;
+        try {
+            info =this.wxService.getUserService().getSessionInfo(code);
+            openid = info.getOpenid();
+            sessionKey = info.getSessionKey();
+        } catch (WxErrorException e) {
+                e.printStackTrace();
+        }
+
+        if (openid==null||sessionKey==null){
+            return ResponseUtil.badArgument();
+        }
+
+        LitemallUser user = litemallUserService.selectOpenid(openid);
+
+        //注册
+        if (Objects.isNull(user)){
+            user = new LitemallUser();
+            user.setUsername(openid);
+            user.setPassword(openid);
+            user.setWeixinOpenid(openid);
+            user.setAvatar(userInfo.getAvatarUrl());
+            user.setNickname(userInfo.getNickName());
+            user.setGender(0);
+            user.setUserLevel(0);
+            user.setStatus(0);
+//            可以全局设置
+            user.setAddTime(LocalDateTime.now());
+            user.setSessionKey(sessionKey);
+
+            if (!litemallUserService.save(user)){
+                return ResponseUtil.serious();
+            }
+
+            // TODO 赠送优惠券
+        }else {
+//            每次登陆时会话密钥不一样
+            user.setSessionKey(sessionKey);
+            user.setUpdateTime(LocalDateTime.now());
+            boolean update = litemallUserService.update(user, new LambdaQueryWrapper<LitemallUser>()
+                    .eq(LitemallUser::getWeixinOpenid, openid));
+            if (!update){
+                return ResponseUtil.serious();
+            }
+        }
+
+        StpUtil.login(user.getId());
+        String token = StpUtil.getTokenValue();
+        Map<String, Object> map = new HashMap<>();
+        map.put("token",token);
+        map.put("userInfo",userInfo);
+        return ResponseUtil.ok(map);
 
     }
 
