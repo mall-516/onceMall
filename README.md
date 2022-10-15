@@ -13,6 +13,7 @@
 		StringUtils.isBlank(params);//空判断
         StringUtils.isNotBlank(params);//非空判断
 ```
-
+3. 使用validator 统一参数空值校验（springboot）
+[Github参考](https://github.com/Rain-with-me/JavaStudyCode)
 # 邮件发送(注册功能使用)
 [SpringBoot整合邮箱](https://www.cnblogs.com/rain-me/p/16774779.html)
